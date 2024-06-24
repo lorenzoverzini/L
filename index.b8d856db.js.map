@@ -1,0 +1,1 @@
+{"mappings":"ACAA,QAAQ,GAAG,CAAC","sources":["<anon>","src/js/index.js"],"sourcesContent":["var $8f6a480bb40b134f$exports = {};\nconsole.log(\"Olsa!\");\nif (null) null.accept();\n\n\n//# sourceMappingURL=index.b8d856db.js.map\n","console.log(\"Olsa!\");\n\nif(module.hot){\n    module.hot.accept();\n}"],"names":["console","log"],"version":3,"file":"index.b8d856db.js.map"}

@@ -1,0 +1,363 @@
+:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: revert;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+img, video {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  white-space: revert;
+}
+
+meter {
+  appearance: revert;
+}
+
+:where(pre) {
+  all: revert;
+}
+
+::placeholder {
+  color: unset;
+}
+
+::marker {
+  content: initial;
+}
+
+:where([hidden]) {
+  display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+  all: revert;
+}
+
+@font-face {
+  font-family: Cooper Lt BT;
+  src: url("CooperBT-Light.0f50b0e5.eot");
+  src: url("CooperBT-Light.0f50b0e5.eot#iefix") format("embedded-opentype"), url("CooperBT-Light.f36f4338.woff2") format("woff2"), url("CooperBT-Light.9055945d.woff") format("woff"), url("CooperBT-Light.c52141c5.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Freizeit 120";
+  src: url("Freizeit120-ExtraBold.b052510d.eot");
+  src: url("Freizeit120-ExtraBold.b052510d.eot#iefix") format("embedded-opentype"), url("Freizeit120-ExtraBold.89ffb2be.woff2") format("woff2"), url("Freizeit120-ExtraBold.9707c134.woff") format("woff"), url("Freizeit120-ExtraBold.958f7308.ttf") format("truetype"), url("Freizeit120-ExtraBold.b8e3a95d.svg#Freizeit120-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.elId {
+  width: fit-content;
+  font-family: "Freizeit 120";
+  position: relative;
+}
+
+.elBody {
+  font-family: Cooper Lt BT;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+@media screen and (width >= 412px) {
+  h1 {
+    font-size: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+@media screen and (width >= 412px) {
+  h3 {
+    font-size: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  h3 {
+    font-size: 48px;
+  }
+}
+
+p {
+  text-indent: 3vw;
+  font-size: 24px;
+}
+
+@media screen and (width >= 412px) {
+  p {
+    font-size: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  p {
+    font-size: 48px;
+  }
+}
+
+small {
+  font-size: 16px;
+}
+
+@media screen and (width >= 412px) {
+  small {
+    font-size: calc(.630915vw + 13.4006px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  small {
+    font-size: 24px;
+  }
+}
+
+.strike {
+  display: inline-block;
+  position: relative;
+}
+
+.strike:before {
+  content: "";
+  border-bottom: 2px solid #04102a;
+  width: 100%;
+  position: absolute;
+  top: 56%;
+  right: 0;
+}
+
+.contacts {
+  text-align: right;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.contacts .split {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.contacts .split div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contacts .split div:first-child {
+  border-right: 1px solid #04102a;
+}
+
+.contacts .line {
+  border-bottom: 1px solid #04102a;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.case {
+  cursor: pointer;
+  background: #dbd8df;
+  border-top: 2px solid #e5f4c5;
+  flex-flow: column wrap;
+  min-height: 79vh;
+  padding: 24px;
+  transition: all .15s ease-out;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+@media screen and (width >= 412px) {
+  .case {
+    padding: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  .case {
+    padding: 48px;
+  }
+}
+
+.case .intro-header {
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+@media screen and (width >= 412px) {
+  .case .intro-header {
+    margin-bottom: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  .case .intro-header {
+    margin-bottom: 48px;
+  }
+}
+
+.case .intro-content {
+  flex-flow: wrap;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+}
+
+.case .intro-content .intro-text, .case .intro-content .intro-image {
+  width: 50%;
+  display: flex;
+}
+
+.case .intro-content .intro-text div {
+  max-width: 670px;
+}
+
+.case .intro-content .intro-image {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.case .intro-content .intro-image .img-wrapper {
+  border-radius: 8px;
+  width: 67%;
+  height: 0;
+  margin-bottom: 24px;
+  padding-top: 67%;
+  position: relative;
+  overflow: hidden;
+}
+
+.case .intro-content .intro-image .img-wrapper img, .case .intro-content .intro-image .img-wrapper video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101% !important;
+  height: 101% !important;
+}
+
+.case .intro-content .intro-image .more {
+  align-items: center;
+  display: flex;
+}
+
+body {
+  color: #04102a;
+  font-family: Cooper Lt BT;
+  line-height: 1.1;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  background: #dbd8df;
+}
+
+*, :before, :after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#app {
+  max-width: 1680px;
+}
+
+nav {
+  width: 100%;
+  min-height: 60vh;
+  padding: 24px;
+  display: flex;
+}
+
+@media screen and (width >= 412px) {
+  nav {
+    padding: calc(1.89274vw + 16.2019px);
+  }
+}
+
+@media screen and (width >= 1680px) {
+  nav {
+    padding: 48px;
+  }
+}
+
+nav div:first-child, nav div:last-child {
+  width: 50%;
+}
+
+nav div:last-child p {
+  text-indent: 0;
+}
+/*# sourceMappingURL=index.369dfa58.css.map */

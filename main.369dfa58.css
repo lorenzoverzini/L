@@ -1,0 +1,37 @@
+body {
+  size: 1rem;
+  color: #22222a;
+  font-family: Inter, sans-serif;
+  line-height: 1.5rem;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  background: #cdcfc9;
+}
+
+*, :before, :after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=main.369dfa58.css.map */
